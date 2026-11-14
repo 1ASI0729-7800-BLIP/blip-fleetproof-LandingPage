@@ -1106,3 +1106,39 @@ h6 {
         display: none;
     }
 }
+.product-video-section {
+    background: #f1f5f9;
+    scroll-margin-top: 100px;
+}
+.product-video-content {
+    max-width: 900px;
+}
+.product-video-section video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2940 / 1568;
+    margin: 24px 0 12px;
+    border-radius: 16px;
+    background: #16324f;
+}
+.product-video-section a {
+    color: #087f8c;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .hero-grid,
+    .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .hero .tags-row,
+    .hero-checklist {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .entities-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
